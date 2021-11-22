@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html > 
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+<script type="text/javascript"> 
+	//class declaration
+	class Rectangle {
+		//constructor
+		constructor(width, length, area, circum){
+			this.width = width;
+			this.length = length;
+			this.area = area;
+			this.circum = circum;
+		}
+		//method for area
+		rectArea(){
+			this.area = this.width * this.length;
+			return this.area;
+		}
+		//method for circumference
+		Circum(){
+			this.circum = 2 * (this.length + this.width); 
+			return this.circum; 
+		}
+	}
+	var rect = new Rectangle(10, 5, "", "");
+	rect.rectArea(); //call the method
+	console.log("The area = " + rect.area );
+	rect.Circum(); //call the method
+	console.log("The circumference = " + rect.circum);
+
+</script>
+</head>
+<body>	
+</body>	
+</html>	
